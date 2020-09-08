@@ -1,0 +1,28 @@
+// @font-face {
+//   font-family: "Linearicons-Free";
+//   src: url("../fonts/Linearicons-Free.svg") format("svg"),
+//        url("../fonts/Linearicons-Free.woff") format("woff"),
+//        url("../fonts/Linearicons-Free.woff2") format("woff2");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url("./fonts/Quicksand-Regular.ttf") format("truetype"),
+       url("./fonts/Quicksand-Regular.woff") format("woff"),
+       url("./fonts/Quicksand-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  src: url("./fonts/Quicksand-Medium.ttf") format("truetype"),
+       url("./fonts/Quicksand-Medium.woff") format("woff"),
+       url("./fonts/Quicksand-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}

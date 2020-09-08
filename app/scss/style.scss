@@ -1,0 +1,167 @@
+@import 'vars';
+@import 'global';
+@import 'fonts';
+
+
+
+// header satart
+// header__top start
+.header__top {
+  background-color: $bg;
+
+  &-logo {
+    margin-right: auto;
+  }
+
+  &-btn {
+    background-color: $blue;
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    min-height: 36px;
+    padding: 0 17px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+
+  &-notification {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-notification__link + &-notification__link {
+    margin-left: 33px;
+  }
+
+  &-user {
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-user__image {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  &-user__info {
+    margin-left: 20px;
+    line-height: 22px;
+  }
+
+  &-user__name {
+    display: block;
+    font-family: $medium;
+    font-size: 16px;
+    color: #333;
+  }
+
+  &-user__money {
+    font-size: 15px;
+    color: $blue;
+  }
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100px;
+}
+
+.lnr {
+  display: inline-block;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.05em;
+  color: #7e8fa1BA;
+  font-size: 20px;
+}
+
+// header__top end
+
+// header__bottom start
+  .header__bottom {
+
+    &-menu {
+      
+    }
+
+    &-menu__list {
+      display: flex;
+      list-style: none;
+      text-transform: uppercase;
+      padding-inline-start: 0;
+    }
+
+    &-menu__item {
+      font-size: 15px;
+      line-height: 42px;
+      font-family: $medium;
+    }
+
+    &-menu__item + &-menu__item {
+      margin-left: 30px;
+    }
+
+    &-menu__link {
+      text-decoration: none;
+      color: #333;
+    }
+
+    &-search {
+      position: relative;
+    }
+
+    &-search__inp {
+      width: 360px;
+      height: 45px;
+      border: 1px solid #dbe1e6;
+      border-radius: 25px;
+      outline: transparent;
+      padding-left: 25px;
+      padding-right: 75px;
+      font-size: 15px;
+      line-height: 30px;
+      color: #898f96;
+
+      &::placeholder {
+        color: #898f96;
+      }
+    }
+
+    &-search__btn {
+      width: 70px;
+      height: 45px;
+      border: none;
+      border-radius: 25px;
+      background-color: $blue;
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      outline: transparent;
+      padding-top: 5px;
+
+      & path {
+        fill:#fff;
+      }
+    }
+  }
+
+  .header__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+  }
+// header__bottom end
+// header end
+
