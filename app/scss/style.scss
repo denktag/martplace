@@ -32,8 +32,44 @@
     align-items: center;
   }
 
-  &-notification__link + &-notification__link {
-    margin-left: 33px;
+  &-notification__btn {
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    position: relative;
+
+    & + & {
+      margin-left: 33px;
+    }
+  }
+
+  &-notification__count {
+    position: absolute;
+    min-width: 22px;
+    padding: 3px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: $medium;
+    font-size: 14px;
+    
+  }
+
+  &-notification__count--alarm {
+    background-color: #ff6a6c;
+    bottom: 17px;
+    left: 15px;
+  }
+
+  &-notification__count--massage {
+    background-color: #62d03b;
+    bottom: 17px;
+    left: 18px;
+  }
+
+  &-notification__count--cart {
+    background-color: $blue;
+    bottom: 17px;
+    left: 20px;
   }
 
   &-user {
@@ -165,3 +201,4 @@
 // header__bottom end
 // header end
 
+// 
