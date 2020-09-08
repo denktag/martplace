@@ -21,30 +21,36 @@
 					</button>
 
 					<div class="header__top-notification">
-						<button class="header__top-notification__btn">
+						<button class="header__top-notification__btn" type="button">
 							<svg class="lnr lnr-alarm">
 								<use xlink:href="#lnr-alarm"></use>
 							</svg>
+
+							<span class="btn--text">alarm</span>
 
 							<div class="header__top-notification__count header__top-notification__count--alarm">
 								25
 							</div>
 						</button>
 
-						<button class="header__top-notification__btn">
+						<button class="header__top-notification__btn" type="button">
 							<svg class="lnr lnr-envelope">
 								<use xlink:href="#lnr-envelope"></use>
 							</svg>
+
+							<span class="btn--text">massage</span>
 
 							<div class="header__top-notification__count header__top-notification__count--massage">
 								6
 							</div>
 						</button>
 
-						<button class="header__top-notification__btn">
+						<button class="header__top-notification__btn" type="button">
 							<svg class="lnr lnr-cart">
 								<use xlink:href="#lnr-cart"></use>
 							</svg>
+
+							<span class="btn--text">cart</span>
 
 							<div class="header__top-notification__count header__top-notification__count--cart">
 								2
@@ -89,9 +95,12 @@
 					</nav>
 
 					<div class="header__bottom-search">
-						<input class="header__bottom-search__inp" type="search" placeholder="Search product here...">
+						<label class="label" for="header__search">header__search</label>
+						<input class="header__bottom-search__inp" type="search" name="header__search" id="header__search" placeholder="Search product here...">
 
 						<button class="header__bottom-search__btn" type="submit">
+							<span class="btn--text">search</span>
+
 							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20"
 								viewBox="0 0 20 20">
 								<path fill="#000000"
@@ -107,8 +116,63 @@
 
 	<main class="content">
 
-		section.
+		<section class="create">
+			<div class="container">
+				<div class="create__inner">
+					<div class="create__text">
+						
+					</div>
 
+					<div class="create__title">
+						Create Your Own
+						<span class="create__title--bold"></span>Digital Product Marketplace</span>
+					</div>
+
+					<div class="create__descr">
+						MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
+					</div>
+
+					
+					<div class="create__btn">
+						<button class="create__btn-products create__btn-products--active">
+							View All Products
+						</button>
+						<button class="create__btn-products">
+							Popular Products
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="products__serch">
+			<div class="container">
+				<div class="products__serch-inner">
+					<div class="products__serch-substrate products__serch-substrate--one"></div>
+					<div class="products__serch-substrate products__serch-substrate--two"></div>
+
+					<div class="products__serch-wrap">
+						<form class="products__serch-form">
+							<label class="label" for="products__search">Search your products...</label>
+							<input class="products__serch-form__inp" id="products__search" type="search" name="products__search" placeholder="Search your products...">
+
+							<label class="label" for="products__categories">Search your products...</label>
+							<select class="products__serch-form__categories" name="categories" id="products__categories">
+								<option value="All Categories">All Categories</option>
+								<option value="Recent Items">Recent Items</option>
+								<option value="Popular Items">Popular Items</option>
+								<option value="Featured Items">Featured Items</option>
+								<option value="Free Templates">Free Templates</option>
+								<option value="Follow Feed">Follow Feed</option>
+								<option value="Top Authors">Top Authors</option>
+							</select >
+
+							<button class="products__serch-form__btn" type="submit">Search Now</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
 	</main>
 
