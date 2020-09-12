@@ -901,6 +901,8 @@
     overflow: hidden;
     margin-bottom: 30px;
     transition: all .3s;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.3);
@@ -1031,6 +1033,7 @@
     border-top: 1px solid #ececec;
     display: flex;
     align-items: center;
+    margin-top: auto;
 
     &__btn {
       min-height: 30px;
