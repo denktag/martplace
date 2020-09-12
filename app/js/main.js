@@ -15,7 +15,8 @@ $(function(){
 	$(".rate-star").rateYo({
     starWidth: "15px",
     rating: 4.5,
-    ratedFill: "#ffc000",
+		ratedFill: "#ffc000",
+		readOnly: true
 	});
 	
 
