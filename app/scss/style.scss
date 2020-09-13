@@ -509,35 +509,8 @@
     font-size: 30px;
   }
 
-  &__slider-btn {
-    display: flex;
-    border-radius: 25px;
-    transition: all .3s;
-    overflow: hidden;
-
-    &:hover {
-      box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
-    }
-
-    &__general {
-      background-color: #7347c1;
-      border: none;
-      outline: transparent;
-      cursor: pointer;
-      min-height: 45px;
-      min-width: 55px;
-
-      &:active {
-        .featured__slider-btn--icon {
-          color: black;
-        }
-      }
-    }
-
-    &--icon {
-      color: #fff;
-      font-size: 14px;
-    }
+  .swiper-container {
+    border-radius: 4px;
   }
 
   &__item {
@@ -780,13 +753,16 @@
 
     &__star {
       margin-left: auto;
+
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    
     }
   }
 }
 
-.swiper-container {
-  border-radius: 4px;
-}
 // featured end
 
 // products start
@@ -1139,7 +1115,68 @@
 }
 // products end
 
+// followers start
+.followers {
+  background-color: #eff1f5;
+  padding: 120px 0;
 
+  .slider__btn--blue {
+    background-color: $blue;
+  }
+}
+// followers end
+
+// statistics start
+.statistics {
+  background-color: #212225;
+  padding: 95px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    text-align: center;
+
+    &--yellow {
+      color: #feb71d;
+    }
+
+    &--blue {
+      color: #58c9e9;
+    }
+
+    &--green {
+      color: #77de51;
+    }
+
+    &--red {
+      color: #ff6a6d;
+    }
+  }
+
+  &__item-icon {
+    margin-bottom: 36px;
+  }
+
+  &__icon {
+    font-size: 48px;
+  }
+
+  &__item-count {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  &__item-text {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  
+}
+// statistics end
 
 
 

@@ -9,8 +9,8 @@ html {
 }
 
 .container {
-  max-width: 1140px;
-  padding: 0 10px;
+  max-width: 1170px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -25,3 +25,33 @@ body {
   font-size: 0;
 }
 
+.slider__buttons {
+  display: flex;
+  border-radius: 25px;
+  transition: all .3s;
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .slider-btn {
+    background-color: #7347c1;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    min-height: 45px;
+    min-width: 55px;
+
+    &:active {
+      .slider-btn--icon {
+        color: black;
+      }
+    }
+
+    &--icon {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}

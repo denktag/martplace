@@ -10,14 +10,27 @@ $(function(){
 		},
 	});
 
+	let mySwiperFollowers = new Swiper('.swiper-container--followers', {
+		slidesPerView: 3,
+		spaceBetween: 28,
+		fade: true,
+		loop: true,
+
+		navigation: {
+			nextEl: '.followers__slider-btn--next',
+			prevEl: '.followers__slider-btn--prev',
+		},
+	});
+
 	let mixer = mixitup(".products__inner-box");
 
 	$(".rate-star").rateYo({
-    starWidth: "15px",
-    rating: 4.5,
+    starWidth: "13px",
+		rating: 4.5,
+		normalFill: 'transparent',
 		ratedFill: "#ffc000",
-		readOnly: true
+		readOnly: true,
 	});
-	
+
 
 });
