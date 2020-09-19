@@ -645,7 +645,7 @@
     max-height: 150px;
     line-height: 30px;
     color: #555;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     overflow: auto;
   }
 
@@ -820,7 +820,7 @@
       color: $blue;
       text-shadow: 1px 0px 1px rgba(6, 116, 236, 1);
 
-      .products__title-btn--icon path {
+      .products__title-icon path {
         fill:  rgb(6, 116, 236);
       }
     }
