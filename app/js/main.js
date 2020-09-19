@@ -5,8 +5,8 @@ $(function(){
 		loop: true,
 
 		navigation: {
-			nextEl: '.featured__slider-btn--next',
-			prevEl: '.featured__slider-btn--prev',
+			nextEl: '.featured__btn-next',
+			prevEl: '.featured__btn-prev',
 		},
 	});
 
@@ -17,12 +17,12 @@ $(function(){
 		loop: true,
 
 		navigation: {
-			nextEl: '.followers__slider-btn--next',
-			prevEl: '.followers__slider-btn--prev',
+			nextEl: '.followers__btn-next',
+			prevEl: '.followers__btn-prev',
 		},
 	});
 
-	let mixer = mixitup(".products__inner-box");
+	let mixer = mixitup(".products__inner");
 
 	$(".rate-star").rateYo({
     starWidth: "13px",

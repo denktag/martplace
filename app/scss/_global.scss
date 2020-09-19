@@ -8,17 +8,16 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-
 body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-weight: 400;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .text-none {
@@ -32,7 +31,7 @@ body {
   height: 1em;
   vertical-align: -0.05em;
   color: #7e8fa1BA;
-  font-size: 20px;
+  font-size: 19px;
   transition: all .3s;
 }
 
@@ -55,22 +54,42 @@ body {
     min-width: 55px;
 
     &:active {
-      .slider-btn--icon {
-        color: black;
+      .slider__btn-icon {
+        color: #000;
       }
     }
+  }
 
-    &--icon {
-      color: #fff;
-      font-size: 14px;
-    }
+  .slider__btn-icon {
+    color: #fff;
+    font-size: 14px;
   }
 }
 
-.title--blue {
+.color-blue {
   color: $blue;
 }
 
-.text--white {
+.color-white {
   color: #fff;
+}
+
+.color-yellow {
+  color: #feb71d;
+}
+
+.color__light-blue {
+  color: #58c9e9;
+}
+
+.color-green {
+  color: #77de51;
+}
+
+.color-tomato {
+  color: #ff6a6d;
+}
+
+.color-violet {
+  color: #7f4ec2;
 }
