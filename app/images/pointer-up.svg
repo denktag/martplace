@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="97" height="89" viewBox="0 0 97 89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0674ec;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1202" y="57" width="97" height="89" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dy="5" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="6.325"/>
+      <feFlood result="flood" flood-color="#52555a" flood-opacity="0.2"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Polygon_1" data-name="Polygon 1" class="cls-1" d="M1259,101h-18l9-10Z" transform="translate(-1202 -57)"/>
+</svg>

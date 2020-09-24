@@ -22,7 +22,7 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]::before, [class*=" icon-"]::before {
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -147,5 +147,32 @@
 }
 .lnr-phone:before {
 	content: "\e831";
+}
+.lnr-user:before {
+	content: "\e82a";
+}
+.lnr-home:before {
+	content: "\e800";
+}
+.lnr-cog:before {
+	content: "\e810";
+}
+.lnr-dice:before {
+	content: "\e812";
+}
+.lnr-upload:before {
+	content: "\e866";
+}
+.lnr-book:before {
+	content: "\e828";
+}
+.lnr-exit:before {
+	content: "\e820";
+}
+.lnr-star:before {
+	content: "\e814";
+}
+.lnr-trash:before {
+	content: "\e811";
 }
 // linearicons end

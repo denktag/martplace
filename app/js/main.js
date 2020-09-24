@@ -17,8 +17,8 @@ $(function(){
 		loop: true,
 
 		navigation: {
-			nextEl: '.followers__btn-next',
-			prevEl: '.followers__btn-prev',
+			nextEl: '.slider__btn--followers-next',
+			prevEl: '.slider__btn--followers-prev',
 		},
 	});
 
@@ -32,5 +32,36 @@ $(function(){
 		readOnly: true,
 	});
 
+	$('.products__title-btn').on('click', function () {
+		$('.products__filter').slideToggle();
+	});
 
+	$('.products__title-btn').focusout(function () {
+		$('.products__filter').slideToggle();
+	});
+
+	$('.header__notification-btn--alarm').on('click', function () {
+		$('.notification__box--alarm').slideToggle();
+	});
+
+	$('.header__notification-btn--alarm').focusout( function () {
+		$('.notification__box--alarm').slideToggle();
+	});
+
+
+	$('.header__notification-btn--massage').on('click', function () {
+		$('.notification__box--massage').slideToggle();
+	});
+
+	$('.header__notification-btn--massage').focusout(function () {
+		$('.notification__box--massage').slideToggle();
+	});
+
+	$('.header__notification-btn--cart').on('click', function () {
+		$('.notification__box--cart').slideToggle();
+	});
+
+	$('.header__notification-btn--cart').focusout(function () {
+		$('.notification__box--cart').slideToggle();
+	});
 });
