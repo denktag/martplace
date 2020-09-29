@@ -16,6 +16,7 @@ body {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -118,10 +119,11 @@ a {
   background-color: #fff;
   box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
   font-size: 15px;
-  line-height: 44px;
+  line-height: 20px;
   color: #54667a;
   padding: 0 20px;
-  min-width: 270px;
+  max-width: 270px;
+  width: 100%;
   height: 0;
   overflow: hidden;
   transition: all .3s;
@@ -129,6 +131,8 @@ a {
   &--profile {
     top: 100px;
     right: 0;
+    min-width: 270px;
+    z-index: 6;
 
     &:hover {
       height: auto;
@@ -152,28 +156,38 @@ a {
     }
   }
 
-  &--home,
-  &--wordpress,
-  &--all {
+  &--home {
     top: 80px;
     left: 0;
   }
 
-  &__list {
-    padding-inline-start: 0;
+  &--wordpress {
+    top: 80px;
+    left: 220px;
+  }
+
+  &--all {
+    top: 80px;
+    left: 75px;
   }
 
   &__box {
-    min-width: 1140px;
+    max-width: 1140px;
     display: flex;
-    justify-content: space-between;
-    left: -457px;
+    left: 0;
     top: 80px;
+    padding-right: 0;
   }
 
   &__martplace-pages {
     max-width: 440px;
     width: 100%;
+  }
+
+  &__dashboard {
+    margin-right: 42px;
+    margin-left: 40px;
+    min-width: 102px;
   }
 
   &__others-pages {
@@ -187,19 +201,26 @@ a {
     color: #000;
     text-transform: none;
     font-family: $medium;
-    padding-top: 15px;
-    margin-bottom: 19px;
+    padding-left: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: transparent;
     border-bottom: 1px solid #e8ebf0;
+    background-color: transparent;
   }
 
   &__inner {
     display: flex;
-    margin-left: 5px;
+    margin-left: 10px;
+    justify-content: space-between;
   }
 
   &__col  {
     & + & {
-      margin-left: 73px;
+      margin-right: 30px;
+      margin-left: 20px;
     }
   }
 
@@ -208,9 +229,10 @@ a {
     transition: all .3s;
     color: #54667a;
     text-transform: none;
+    text-align: left;
 
     &--pages {
-      line-height: 42px;
+      line-height: 20px;
     }
 
     &--btn {
@@ -224,7 +246,7 @@ a {
 
   &__item {
     display: flex;
-    padding: 0 10px;
+    padding: 12px 10px;
     transition: all .3s;
 
     &:hover {
@@ -247,6 +269,10 @@ a {
 
     &--pages {
       padding-left: 0;
+
+      & + & {
+        margin-top: 22px;
+      }
     }
   }
 
