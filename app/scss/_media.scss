@@ -72,6 +72,56 @@
 			justify-content: space-around;
 		}
 	}
+
+	.category-products {
+		.side-bar {
+			max-width: 100%;
+			margin-bottom: 50px;
+			&__items {
+				width: 100%;
+			}
+		}
+
+		.pagination {
+			&__list {
+				justify-content: center;
+			}
+		}
+		
+		&__wrap {
+			padding: 30px 0;
+			display: block;
+		}
+
+		&__box {
+			min-width: 100%;
+		}
+
+		&__item {
+			&.list {
+				min-width: 100%;
+				margin-bottom: 20px;
+				margin-left: 0;
+				justify-content: space-between;
+
+				.category-products {
+					&__content {
+						max-width: 500px;
+						width: 90%;
+					}
+
+					&__info--list {
+						max-width: 390px;
+						width: 50%;
+					}
+
+					&__purchase {
+						width: 30%;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -334,6 +384,61 @@
 	.drop-down {
 		left: auto;
 	}
+
+	.page-search {
+		padding: 40px 0 30px;
+
+		.page-search__form {
+			margin-bottom: 40px;
+		}
+	}
+
+	.category-products {
+		.filter {
+			padding: 20px 0;
+
+			&__inner {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			&__item {
+				width: 100%;
+				justify-content: center;
+			}
+		}
+
+		.side-bar {
+			margin-bottom: 20px;
+		}
+
+		&__item {
+			max-width: 380px;
+			margin: 20px;
+
+			&.list {
+				margin: 0 0 20px;
+
+				.category-products {
+					&__content {
+						padding: 26px 15px 10px;
+					}
+
+					&__descr {
+						line-height: 20px;
+					}
+
+					&__info--list {
+						padding: 30px 15px;
+					}
+
+					&__purchase {
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -453,7 +558,7 @@
 		}
 	}
 
-	.slider__buttons {
+	.slider-buttons {
 		.slider-btn {
 			min-height: 40px;
 			min-width: 42px;
@@ -583,6 +688,38 @@
 			top: 100px;
 		}
 	}
+
+	.category-products {
+		.filter {
+			&__quantity {
+				margin-left: 12px;
+			}
+
+			&__markup {
+				display: none;
+			}
+
+			&__markup {
+				width: 50px;
+				padding: 0;
+			}
+
+			&__grid {
+				width: 100%;
+				padding: 0;
+			}
+		}
+
+		&__inner {
+			margin-bottom: 20px;
+		}
+
+		&__item {
+			min-width: 150px;
+			width: 45%;
+			margin: 10px;
+		}
+	}
 }
 
 @media (max-width: 576px) {
@@ -614,7 +751,7 @@
 			background-color: #fff;
 		}
 
-		&__menu-btn {
+		.menu-btn {
 			display: flex;
 			align-items: center;
 			margin-top: 20px;
@@ -802,7 +939,7 @@
 		}
 	}
 
-	.slider__buttons {
+	.slider-buttons {
 		.slider-btn {
 			min-height: 32px;
 		}
@@ -934,6 +1071,42 @@
 			}
 		}
 	}
+
+	.page-search {
+		.page-search__form {
+			height: 50px;
+		}
+	}
+
+	.category-products {
+		.filter {
+			&__item:first-child {
+				margin-bottom: 20px;
+			}
+
+			&__form {
+				flex-wrap: wrap;
+			}
+
+			&__price {
+				margin-bottom: 20px;
+			}
+
+			&__quantity,
+			&__price {
+				width: 100%;
+			}
+
+			&__quantity {
+				margin-left: 0;
+			}
+		}
+
+		&__item {
+			width: 100%;
+			margin: 10px 0;
+		}
+	}
 }
 
 @media (max-width: 380px) {
@@ -942,21 +1115,22 @@
 			justify-content: space-between;
 		}
 
+		&__notification {
+			margin-left: 0;
+		}
+
 		.notification {
 			margin-left: 0;
+			width: 100%;
+			padding: 0 10px;
+			font-size: 14px;	
 
-			&__box {
-				width: 100%;
-				padding: 0 10px;
-				font-size: 14px;
-
-				&--cart::before {
-					left: 54px;
-				}
-
-				&--massage::before {
-				left: 10px;
+			&--cart::before {
+				left: 54px;
 			}
+
+			&--massage::before {
+				left: 10px;
 			}
 
 			&__product-img {
@@ -1011,6 +1185,28 @@
 			}
 		}
 
+		&__notification-btn {
+			width: 44px;
+			height: 44px;
+		}
+
+		&__notification-count {
+			&--alarm {
+				bottom: 25px;
+				left: 22px;
+			}
+
+			&--massage {
+				bottom: 24px;
+				left: 28px;
+			}
+
+			&--cart {
+				bottom: 23px;
+				left: 28px;
+			}
+		}
+
 		&__logo {
 			max-width: 172px;
 		}
@@ -1034,7 +1230,7 @@
 
 		&__notification-btn--alarm,
 		&__notification-btn--massage {
-			margin-right: 10px;
+			margin-right: 0;
 		}
 
 		&__bottom-inner {
@@ -1172,6 +1368,47 @@
 
 		&__bottom {
 			padding-bottom: 15px;
+		}
+	}
+
+	.page-search {
+		.page-search__title {
+				font-size: 25px;
+		}
+
+		.page-search__form {
+			height: 45px;
+		}
+	}
+
+	.category-products {
+		.filter {
+			// &__grid {
+			// 	padding-left: 5px;
+			// }
+
+			&__price,
+			&__quantity {
+				min-width: 190px;
+			}
+		}
+
+		.pagination {
+			&__btn {
+				width: 38px;
+				height: 32px;
+			}
+
+			&__switch {
+
+				&:first-child {
+					margin-right: 6px;
+				}
+
+				&:last-child {
+					margin-left: 5px;
+				}
+			}
 		}
 	}
 }

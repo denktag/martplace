@@ -33,7 +33,40 @@ $(function(){
 		},
 	});
 
-	let mixer = mixitup(".products__inner");
+	if($('div').is('.mix')) {
+		let mixer = mixitup(".products__inner");
+	}
+
+	$('.filter__btn--new').on('click', function () {
+		$(".filter__btn--new").addClass('btn-active');
+		$(".filter__btn--popular").removeClass("btn-active");
+	});
+
+	$(".filter__btn--popular").on("click", function () {
+		$(".filter__btn--popular").addClass("btn-active");
+		$(".filter__btn--new").removeClass("btn-active");
+	});
+
+	$('.filter__list').on('click', function(){
+		$(".category-products__item").addClass('list');
+		$(".filter__icon--list").addClass("filter__icon--active");
+    $(".filter__icon--grid").removeClass("filter__icon--active");
+	});
+
+	$(".filter__grid").on("click", function () {
+		$(".category-products__item").removeClass("list");
+		$(".filter__icon--grid").addClass("filter__icon--active");
+    $(".filter__icon--list").removeClass("filter__icon--active");
+	});
+
+	$(".js-range-slider").ionRangeSlider({
+		type: "double",
+		min: 0,
+		max: 500,
+		from: 30,
+		to: 300,
+		prefix: "$",
+	});
 
 	$(".rate-star").rateYo({
     starWidth: "13px",
@@ -42,6 +75,15 @@ $(function(){
 		ratedFill: "#ffc000",
 		readOnly: true,
 	});
+
+	$(".star-category").rateYo({
+    starWidth: "17px",
+    rating: 4.5,
+    normalFill: "transparent",
+    ratedFill: "#000000",
+    readOnly: true,
+  });
+
 
 	$('.products__title-btn').on('click', function () {
 		$('.products__filter').slideToggle();
@@ -52,34 +94,34 @@ $(function(){
 	});
 
 	$('.header__notification-btn--alarm').on('click', function () {
-		$('.notification__box--alarm').slideToggle();
+		$('.notification--alarm').slideToggle();
 	});
 
 	$('.header__notification-btn--alarm').focusout( function () {
-		$('.notification__box--alarm').slideToggle();
+		$('.notification--alarm').slideToggle();
 	});
 
 	$('.header__notification-btn--massage').on('click', function () {
-		$('.notification__box--massage').slideToggle();
+		$('.notification--massage').slideToggle();
 	});
 
 	$('.header__notification-btn--massage').focusout(function () {
-		$('.notification__box--massage').slideToggle();
+		$('.notification--massage').slideToggle();
 	});
 
 	$('.header__notification-btn--cart').on('click', function () {
-		$('.notification__box--cart').slideToggle();
+		$('.notification--cart').slideToggle();
 	});
 
 	$('.header__notification-btn--cart').focusout(function () {
-		$('.notification__box--cart').slideToggle();
+		$('.notification--cart').slideToggle();
 	});
 
-	$('.header__menu-btn').on('click', function () {
+	$('.menu-btn').on('click', function () {
 		$('.header__menu').slideToggle();
 	});
 
-	$('.header__menu-btn').focusout(function () {
+	$('.menu-btn').focusout(function () {
 		$('.header__menu').slideToggle();
 	});
 
