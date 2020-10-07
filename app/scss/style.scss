@@ -3089,7 +3089,8 @@
 }
 
 .page-title {
-  padding: 55px 0;
+  padding-top: 35px;
+  padding-bottom: 51px;
   background-color: #6c6c6c;
   background-image: -webkit-linear-gradient( 180deg, rgb(13,62,242) 0%, rgb(45,47,199) 46%, rgb(76,31,156) 100%);
   opacity: 0.902;
@@ -3097,7 +3098,7 @@
 
   .breadcrumbs {
     &--pages {
-      line-height: 70px;
+      line-height: 60px;
     }
     
     &__list--pages {
@@ -3118,7 +3119,7 @@
   &__inner {
     max-width: 555px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 56px 0;
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   }
@@ -3132,26 +3133,30 @@
   }
 
   &__text {
-    margin-top: 20px;
+    margin-top: 14px;
     display: block;
     font-size: 16px;
     line-height: 28px;
     color: #555;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+
+    &--register {
+      padding: 0 60px 25px;
+    }
   }
 
   &__content {
-    padding: 28px 48px 0;
+    padding: 26px 52px 0;
   }
 
   &__label {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     font-family: $medium;
   }
 
   &__inp {
-    margin-bottom: 30px;
+    margin-bottom: 31px;
     border: none;
     outline: transparent;
     padding: 0 20px;
@@ -3178,7 +3183,7 @@
 
       & + label {
         position: relative;
-        padding: 0 0 0 30px;
+        padding: 0 0 0 34px;
         cursor: pointer;
       }
 
@@ -3189,7 +3194,7 @@
         left: 0;
         width: 20px;
         height: 20px;
-        border: 1px solid #555;
+        border: 1px solid rgba(85, 85, 85, .5);
         border-radius: 50%;
         background: #fff;
         transition: .3s;
@@ -3228,21 +3233,6 @@
         text-shadow: 0 0 1px $blue;
       }
     }
-
-    // &__label {
-    //   font-size: 16px;
-    //   color: #555;
-    //   padding-left: 40px;
-
-    //   &::before {
-    //     content: '';
-    //     width: 22px;
-    //     height: 22px;
-    //     border: 1px solid #000;
-    //     position: absolute;
-    //     left: 0;
-    //   }
-    // }
   }
 
   &__btn {
@@ -3255,7 +3245,7 @@
     width: 100%;
     height: 50px;
     border-radius: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
 
     &:hover,
     &:focus {
@@ -3272,7 +3262,7 @@
     &__link {
       font-size: 16px;
       line-height: 26px;
-      
+
       &:hover {
         text-shadow: 0 0 1px $blue;
       }
