@@ -720,6 +720,10 @@
 			margin: 10px;
 		}
 	}
+
+	.login {
+		padding: 50px 0;
+	}
 }
 
 @media (max-width: 576px) {
@@ -1107,6 +1111,35 @@
 			margin: 10px 0;
 		}
 	}
+
+	.login {
+		&__inner {
+			padding: 40px 0;
+		} 
+
+		&__content {
+			padding: 28px 20px 0;
+		}
+
+		&__support {
+			display: block;
+			text-align: center;
+		}
+
+		.support {
+			display: block;
+			width: 100%;
+		}
+
+		.remmember {
+			text-align: center;
+		}
+
+		&__btn {
+			display: block;
+			margin: 0 auto 40px;
+		}
+	}
 }
 
 @media (max-width: 380px) {
@@ -1410,5 +1443,30 @@
 				}
 			}
 		}
+	}
+
+	.login {
+		padding: 40px 0;
+
+		&__text {
+			line-height: 20px;
+			padding: 0 15px 20px;
+		}
+
+		&__inner {
+			padding: 25px 0;
+		}
+
+		.support {
+			&:first-child {
+				margin-bottom: 15px;
+			}
+
+			&__link {
+				line-height: 20px;
+			}
+		}
+
+		
 	}
 }
