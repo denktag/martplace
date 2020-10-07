@@ -3096,6 +3096,10 @@
   opacity: 0.902;
   color: #fff;
 
+  &--contact {
+    padding: 90px 0;
+  }
+
   .breadcrumbs {
     &--pages {
       line-height: 60px;
@@ -3109,6 +3113,16 @@
   .title {
     font-family: $medium;
     font-size: 30px;
+
+    &--contact {
+      text-align: center;
+      line-height: 50px;
+    }
+
+    &__text {
+      font-size: 20px;
+      font-family: "Quicksand", sans-serif;
+    }
   }
 }
 
@@ -3122,6 +3136,11 @@
     padding: 56px 0;
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+    &--recover {
+      padding-top: 38px;
+      padding-bottom: 27px;
+    }
   }
 
   &__title {
@@ -3143,10 +3162,20 @@
     &--register {
       padding: 0 60px 25px;
     }
+
+    &--recover {
+      padding: 0 50px 23px;
+      line-height: 30px;
+      text-align: left;
+    }
   }
 
   &__content {
     padding: 26px 52px 0;
+
+    &--recover {
+      padding: 38px 50px 0;
+    }
   }
 
   &__label {
@@ -3269,6 +3298,183 @@
     }
   }
 }
+
+.contact {
+  padding-top: 112px;
+  padding-bottom: 122px;
+  text-align: center;
+  background-color: #eff1f5;
+
+  &__title {
+    font-size: 36px;
+    color: #000;
+  }
+
+  &__title-text {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    max-width: 680px;
+    margin: 21px auto 56px;
+  }
+
+  .address {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    &__item {
+      border-radius: 4px;
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+      background-color: #fff;
+      max-width: 360px;
+      width: 100%;
+      padding: 50px 60px 43px;
+    }
+  }
+
+  &__icon {
+    font-size: 48px;
+    color: $blue;
+    margin-bottom: 43px;
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    font-family: $medium;
+    font-style: normal;
+    margin-bottom: 23px;
+
+    &--email {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__info,
+  &__link {
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+    font-style: normal;
+  }
+
+  &__link {
+    display: block;
+    transition: all .3s;
+
+    &--email {
+      line-height: 26px;
+    }
+
+    &:hover {
+      color: $blue;
+      text-shadow: 0 0 1px $blue;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding-top: 47px;
+    padding-bottom: 60px;
+  }
+
+  &__form-title {
+    font-size: 24px;
+    line-height: 42px;
+    color: #000;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #e8ebf0;
+  }
+
+  &__form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  &__form-inner {
+    padding-bottom: 20px;
+    max-width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__inp {
+    max-width: 360px;
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    padding: 0 47px;
+    border: 1px solid #e7e7e7;
+    outline: transparent;
+    transition: all .3s;
+
+    &--email,
+    &--phone {
+      padding: 0 17px;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px 1px rgba(6, 116, 236, .5);
+    }
+  }
+
+  &__text {
+    max-width: 750px;
+    width: 100%;
+    max-height: 133px;
+    height: 100%;
+    overflow: auto;
+    border: 1px solid #e7e7e7;
+    outline: transparent;
+    padding: 16px 48px;
+    resize: none;
+    margin-bottom: 30px;
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px 1px rgba(6, 116, 236, .5);
+    }
+  }
+
+  &__btn {
+    background-color: $blue;
+    color: #fff;
+    max-width: 170px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    outline: transparent;
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover {
+      box-shadow: 0 0 2px 2px rgba(0, 0, 0, .3);
+    }
+  }
+}
+
+.map {
+  width: 100%;
+  background-color: #e3e6ec;
+}
+
+.google-map {
+  width: 100%;
+  height: 400px;
+}
+
+
 
 
 

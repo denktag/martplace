@@ -122,6 +122,16 @@
 			}
 		}
 	}
+
+	.contact {
+		.address {
+			&__item {
+				&:not(:first-child) {
+					margin-left: 10px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -439,6 +449,38 @@
 			}
 		}
 	}
+
+	.contact {
+		padding: 40px 0;
+
+		.address {
+			margin-bottom: 0;
+
+			&__item {
+				padding: 30px 20px;
+			}
+		}
+
+		&__title-text {
+			margin-bottom: 30px;
+		}
+
+		&__form-content {
+			padding: 25px 20px 0;
+		}
+
+		&__form-inner {
+			justify-content: center;
+		}
+
+		&__inp {
+			max-width: 340px;
+			&--email,
+			&--phone {
+				margin-left: auto;
+			}
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -723,6 +765,35 @@
 
 	.login {
 		padding: 50px 0;
+	}
+
+	.contact {
+		.address {
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-bottom: 30px;
+
+			&__item {
+				margin: 10px 0;
+
+				&:not(:first-child) {
+					margin-left: 0;
+				}
+			}
+		}
+
+		&__inp {
+			max-width: 100%;
+			padding: 0 17px;
+		}
+
+		&__text {
+			padding-left: 17px;
+		}
+
+		&__form {
+			padding: 20px 0;
+		}
 	}
 }
 
@@ -1138,6 +1209,10 @@
 		&__btn {
 			display: block;
 			margin: 0 auto 40px;
+
+			&--recover {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
@@ -1468,5 +1543,9 @@
 		}
 
 		
+	}
+
+	.google-map {
+		height: 300px;
 	}
 }
