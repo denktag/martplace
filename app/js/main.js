@@ -80,9 +80,17 @@ $(function(){
     starWidth: "17px",
     rating: 4.5,
     normalFill: "transparent",
-    ratedFill: "#000000",
+		ratedFill: "#ffc000",
     readOnly: true,
-  });
+	});
+	
+	$(".aside__star").rateYo({
+		starWidth: "17px",
+		rating: 4.9,
+		normalFill: "transparent",
+		ratedFill: "#ffc000",
+		readOnly: true,
+	});
 
 
 	$('.products__title-btn').on('click', function () {
@@ -148,4 +156,22 @@ $(function(){
 	$('.drop-down__title--others-pages').focusout('click', function () {
 		$('.drop-down__wrap--others-pages').slideToggle();
 	});
+
+	$('.product__menu-btn').on('click', function () {
+		$('.single-product__list').slideToggle();
+	});
+
+	$('.product__menu-btn').focusout(function () {
+		$('.single-product__list').slideToggle();
+	});
+
+	$('.single-product__block .single-product__item').on('click', function(event) {
+		let id = $(this).attr('data-id');
+		$('.single-product__block').find('.single-product__box').removeClass('item-active').hide();
+		$('.single-product__block .single-product__list').find('.single-product__item').removeClass('active');
+		$(this).addClass('active');
+		$('#'+id).addClass('active-tab').fadeIn();
+		return false;
+	});
+
 });
