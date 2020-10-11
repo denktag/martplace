@@ -3001,59 +3001,6 @@
   &__category-name {
     margin-left: 5px;
   }
-
-  .pagination {
-    &__list {
-      display: flex;
-      justify-content: flex-end;
-      list-style: none;
-    }
-
-    &__item:not(:first-child) {
-      margin-left: 5px;
-    }
-
-    &__switch {
-      font-family: 'Linearicons-Free';
-
-      &:first-child {
-        margin-right: 15px;
-      }
-
-      &:last-child {
-        margin-left: 20px;
-      }
-    }
-
-    &__btn {
-      width: 50px;
-      height: 38px;
-      border-radius: 19px;
-      background-color: #fff;
-      font-size: 16px;
-      color: #747b86;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all .3s;
-
-      &:hover {
-        box-shadow: 0 0 2px 2px rgba(116, 123, 134, .5);
-      }
-
-      &--active {
-        background-color: $blue;
-        color: #fff;
-      }
-    }
-
-    &__btn-switch {
-      &--active {
-        background-color: #7347c1;
-        color: #fff;
-      }
-    }
-  }
 }
 // category-products end
 
@@ -3066,8 +3013,17 @@
   opacity: 0.902;
   color: #fff;
 
+  &--single {
+    padding-top: 31px;
+    padding-bottom: 54px;
+  }
+
   &--contact {
     padding: 90px 0;
+  }
+
+  &--blog {
+    padding: 54px 0;
   }
 
   .breadcrumbs {
@@ -3432,7 +3388,7 @@
     }
 
     &__buttons {
-      padding: 30px 0;
+      padding: 28px 0;
       border-bottom: 1px solid #e8e8e8;
     }
 
@@ -3510,8 +3466,7 @@
     }
 
     &__item {
-      height: 70px;
-      width: 100%;
+      padding: 25px 30px 26px 32px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -3537,21 +3492,7 @@
 
     &__box {
       &--details {
-      padding: 80px 30px;
-
-      &__title {
-        font-size: 28px;
-        color: #000;
-        margin-bottom: 40px;
-      }
-
-      &__descr {
-        font-size: 16px;
-        line-height: 30px;
-        color: #555;
-        margin-top: 0;
-        margin-bottom: 35px;
-      }
+        padding: 74px 30px;
       }
 
       &--comments,
@@ -3562,21 +3503,37 @@
         padding: 60px 20px 20px;
       }
     }
+
+    .details {
+      &__title {
+        font-size: 28px;
+        color: #000;
+        margin-bottom: 30px;
+      }
+
+      &__descr {
+        font-size: 16px;
+        line-height: 30px;
+        color: #555;
+        margin-top: 0;
+        margin-bottom: 57px;
+      }
+    }
     
     .features {
       &__title {
-        margin-bottom: 34px;
+        margin-bottom: 26px;
       }
 
       &__list {
         list-style: none;
         color: #555;
-        margin-bottom: 70px;
+        margin-bottom: 65px;
       }
 
       &__item {
         &:not(:first-child) {
-          margin-top: 20px;
+          margin-top: 16px;
         }
 
         &--unordered {
@@ -3637,7 +3594,7 @@
     }
 
     &__price {
-      padding: 35px 0;
+      padding: 32px 0;
       background-color: $blue;
       text-align: center;
     }
@@ -3658,11 +3615,17 @@
     }
 
     &__inner {
-      padding: 30px;
+      padding: 30px 30px 40px;
 
       &--rating {
         padding: 10px 30px;
       }
+
+      &--info {
+        padding-bottom: 8px;
+      }
+
+      
     }
 
     .license {
@@ -3676,8 +3639,10 @@
       }
 
       &__text {
-        margin-top: 25px;
-        margin-bottom: 30px;
+        margin-top: 22px;
+        margin-bottom: 24px;
+        padding-left: 35px;
+        line-height: 30px;
       }
     }
 
@@ -3704,7 +3669,7 @@
     }
 
     &__rating {
-      padding: 30px 0 30px 25px;
+      padding: 30px 0 25px 27px;
       display: flex;
       justify-content: space-between;
       position: relative;
@@ -3776,13 +3741,18 @@
       line-height: 30px;
       color: #000;
       text-align: center;
-      padding-bottom: 20px;
+      padding-top: 3px;
+      padding-bottom: 24px;
       border-bottom: 1px solid #ececec;
+
+      &--author {
+        padding-bottom: 13px;
+      }
     }
 
     .info {
       &__items {
-        padding-top: 30px;
+        padding-top: 22px;
         padding-bottom: 10px;
       }
 
@@ -3792,13 +3762,18 @@
         color: #555;
         display: flex;
         justify-content: space-between;
+        
+        &:not(:first-child) {
+          margin-top: 4px;
+        }
       }
 
       &__name {
         max-width: 115px;
       }
+
       &__descr {
-        max-width: 170px;
+        max-width: 165px;
         width: 100%;
         text-align: left;
       }
@@ -3849,7 +3824,7 @@
 
     &__social {
       justify-content: center;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     &__buttons {
@@ -3861,7 +3836,7 @@
       max-width: 140px;
       width: 100%;
       padding-top: 16px;
-      padding-bottom: 17px;
+      padding-bottom: 12px;
       border-radius: 30px;
       font-size: 15px;
       transition: all .3s;
@@ -3876,17 +3851,326 @@
     }
   }
 }
-
-
-
-
-
-
-
-
 // single-product end
 
+// blog start
+.blog {
+  background-color: #eff1f5;
 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 67px;
+    padding-bottom: 120px;
+  }
+
+  &__content {
+    max-width: 750px;
+  }
+
+  &__item {
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    overflow: hidden;
+
+    & + & {
+      margin-top: 40px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 430px;
+  }
+
+  &__item-inner {
+    padding: 31px 0 38px;
+  }
+
+  &__title {
+    font-family: $medium;
+    font-size: 30px;
+    line-height: 36px;
+    color: #333;
+    display: block;
+    margin-bottom: 14px;
+    padding: 0 30px;
+    transition: all .3s;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 0 30px 30px;
+    color: #898f96;
+    border-bottom: 1px solid #ececec;
+  }
+
+  &__author {
+    padding-left: 25px;
+    position: relative;
+    margin-right: 25px;
+
+    &::before {
+      content: "\e82a";
+      font-family: 'Linearicons-Free';
+      font-size: 15px;
+      color: #898f96;
+      position: absolute;
+      left: 0;
+      top: 2px;
+    }
+  }
+
+  &__link {
+    transition: all .3s;
+
+    &:hover {
+      text-shadow: 0 0 1px $blue;
+    }
+  }
+
+  &__date {
+    margin-right: 14px;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    font-size: 15px;
+    color: #898f96;
+  }
+
+  &__info-btn {
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    background-color: transparent;
+
+    &--comment {
+      margin-right: 15px;
+    }
+  }
+
+  &__text {
+    max-height: 145px;
+    padding: 21px 35px 0px 30px;
+    overflow: hidden;
+    margin: 0 0 50px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #555;
+  }
+
+  &__btn {
+    padding: 15px 26px;
+    margin-left: 30px;
+    border: none;
+    border-radius: 25px;
+    outline: transparent;
+    cursor: pointer;
+    background-color: $blue;
+    color: #fff;
+  }
+
+  .aside {
+    max-width: 360px;
+    width: 100%;
+
+    &__item {
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+
+      &:not(:first-child) {
+        margin-top: 30px;
+      }
+
+      &--banner {
+        max-width: 360px;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: -webkit-linear-gradient( 180deg, rgba(0, 46, 217, .8) 0%, rgba(85, 23, 218, .8) 46%, rgba(169, 0, 218, .8) 100%);
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 32px;
+      color: #000;
+      padding: 22px 25px;
+      border-bottom: 1px solid #ececec;
+
+      &--posts {
+        padding-right: 44px;
+      }
+    }
+
+    &__search {
+      padding: 13px 25px 40px;
+    }
+
+    &__inp {
+      max-width: 310px;
+    }
+
+    &__search-btn {
+      right: 25px;
+    }
+
+    &__banner-size {
+      display: block;
+    }
+
+    &__posts {
+      display: none;
+      padding-bottom: 20px;
+
+      &--active {
+        display: block;
+      }
+    }
+
+    &__posts-item {
+      display: flex;
+      padding: 15px 25px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #ececec;
+      }
+    }
+
+    &__posts-img {
+      max-width: 70px;
+      height: 70px;
+      margin-top: 6px;
+      margin-right: 15px;
+      transition: all .3s;
+
+      &:hover {
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+      }
+    }
+
+    &__posts-title {
+      font-size: 16px;
+      line-height: 24px;
+      color: #333;
+      font-family: $medium;
+      margin-bottom: 9px;
+      display: block;
+      transition: all .3s;
+
+      &:hover {
+        text-shadow: 0 0 1px  #333;
+      }
+    }
+
+    &__title-item {
+      transition: all .3s;
+
+      &--active {
+        color: $blue;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title-item {
+      cursor: pointer;
+    }
+
+    &__list {
+      list-style: none;
+      padding: 15px 33px 32px 25px;
+    }
+
+    &__list-item {
+      padding-left: 15px;
+      position: relative;
+      color: #747b86;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &::before {
+        content: "\e876";
+        font-family: 'Linearicons-Free';
+        position: absolute;
+        left: 0;
+        font-size: 10px;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: transparent;
+      cursor: pointer;
+      background-color: transparent;
+      color: #555;
+      font-size: 16px;
+      line-height: 34px;
+      transition: all .3s;
+
+      &:hover,
+      &:focus {
+        color: $blue;
+      }
+    }
+
+    &__btn-count {
+      transform: translateY(4px);
+    }
+
+    &__tags {
+      padding: 25px 24px 35px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__tags-link {
+      color: $blue;
+      padding: 8px 14px;
+      border-radius: 25px;
+      background-color: #edf5fe;
+      margin-bottom: 7px;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $blue;
+        color: #fff;
+      }
+    }
+
+    &__banner {
+      font-size: 36px;
+      color: #f9f9f9;
+    }
+
+    &__banner-size {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+}
+// blog end
 
 
 @import 'media';

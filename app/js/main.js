@@ -174,4 +174,13 @@ $(function(){
 		return false;
 	});
 
+	$('.aside__inner .aside__title-item').on('click', function(event) {
+		let id = $(this).attr('data-id');
+		$('.aside__inner').find('.aside__posts').removeClass('aside__posts--active').hide();
+		$('.aside__inner .aside__title').find('.aside__title-item').removeClass('aside__title-item--active');
+		$(this).addClass('aside__title-item--active');
+		$('#'+id).addClass('aside__posts--active').fadeIn();
+		return false;
+	});
+
 });
