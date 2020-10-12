@@ -281,6 +281,10 @@ a {
       &--blog {
         justify-content: flex-start;
       }
+
+      &--favourites {
+        justify-content: center;
+      }
     }
 
     &__item:not(:first-child) {
@@ -332,6 +336,98 @@ a {
       margin-top: 60px;
     }
 }
+
+.filter {
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    background-color: #fff;
+
+    &__inner {
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__item {
+      display: flex;
+    }
+
+    &__btn {
+      border: none;
+      outline: transparent;
+      background-color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 0;
+      transition: all .3s;
+
+      &--new {
+        margin-right: 40px;
+      }
+
+      &:hover {
+        color: $blue;
+        text-shadow: 0 0 1px $blue;
+      }
+    }
+
+    &__price,
+    &__quantity {
+      height: 44px;
+      border: 1px solid #eceff2;
+      outline: transparent;
+      cursor: pointer;
+      border-radius: 3px;
+      min-width: 220px;
+      padding-left: 18px;
+      appearance: none;
+      background-image: url('../images/arrow-down.png');
+      background-repeat: no-repeat;
+      background-size: inherit;
+      background-position-y: calc(100% - 15px);
+      background-position-x: calc(100% - 18px);
+      transition: all .3s;
+
+      &:hover {
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, .3);
+      }
+    }
+
+    &__quantity {
+      margin-left: 29px;
+    }
+
+    &__form {
+      display: flex;
+    }
+
+    &__markup {
+      display: flex;
+      justify-content: space-around;
+      width: 96px;
+      height: 44px;
+      padding: 0 5px;
+      border: 1px solid #eceff2;
+      margin-left: 29px;
+      border-radius: 3px;
+    }
+
+    &__grid,
+    &__list {
+      background-color: transparent;
+      border: none;
+      outline: transparent;
+      cursor: pointer;
+    }
+
+    &__grid {
+      padding-left: 11px;
+    }
+
+    &__icon--active {
+      fill: rgb(6, 116, 236)
+    }
+  }
 
 // drop-down start
 .drop-down {

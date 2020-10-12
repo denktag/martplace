@@ -50,13 +50,15 @@ $(function(){
 	$('.filter__list').on('click', function(){
 		$(".category-products__item").addClass('list');
 		$(".filter__icon--list").addClass("filter__icon--active");
-    $(".filter__icon--grid").removeClass("filter__icon--active");
+		$(".filter__icon--grid").removeClass("filter__icon--active");
+		$(".favourites__item").addClass('list');
 	});
 
 	$(".filter__grid").on("click", function () {
 		$(".category-products__item").removeClass("list");
 		$(".filter__icon--grid").addClass("filter__icon--active");
-    $(".filter__icon--list").removeClass("filter__icon--active");
+		$(".filter__icon--list").removeClass("filter__icon--active");
+		$(".favourites__item").removeClass("list");
 	});
 
 	$(".js-range-slider").ionRangeSlider({

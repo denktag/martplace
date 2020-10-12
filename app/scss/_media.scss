@@ -210,6 +210,53 @@
 			}
 		}
 	}
+
+	.favourites {
+		.filter {
+			&__title {
+				margin-right: 10px;
+			}
+
+			&__item {
+				justify-content: space-around;
+
+				&--menu	 {
+					max-width: 115px;
+				}
+
+				&--favourites-btn {
+					max-width: 550px;
+				}
+			}
+
+			&__btn {
+				padding: 0 15px;
+
+				&::after {
+					right: 15px;
+				}
+			}
+
+			&__form {
+				justify-content: space-around;
+				max-width: 450px;
+			}
+
+			&__quantity,
+			&__markup {
+				margin-left: 15px;
+			}
+		}
+
+		&__item {
+			margin-right: 35px;
+
+			&.list {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
+	}
 }
 
 @media (max-width: 992px) {
@@ -580,7 +627,53 @@
 				margin-bottom: 20px;
 			}
 		}
-	}	
+	}
+
+	.favourites {
+		padding-bottom: 40px;
+
+		.filter {
+			margin-bottom: 40px;
+
+			&__inner {
+				flex-wrap: wrap;
+				padding: 10px 0 20px;
+			}
+
+			&__item {
+
+				&--menu	 {
+					height: 50px;
+					border: none;
+				}
+
+				&--favourites-btn {
+					max-width: 100%;
+					margin-top: 20px;
+					justify-content: space-between;
+				}
+			}
+
+			&__menu {
+				right: 0;
+				left: auto;
+				top: 50px;
+
+				&::before {
+					right: -28px;
+					left: auto;
+				}
+			}
+
+			&__form {
+			}
+		}
+
+		&__item {
+			margin: 10px;
+			width: 47%;
+		}
+	}
 }
 
 @media (max-width: 768px) {
@@ -937,6 +1030,35 @@
 				height: 500px;
 			}
 		}	
+	}
+
+	.favourites {
+		.filter {
+			&__markup {
+				display: none;
+			}
+
+			&__form {
+				&--favourites {
+					max-width: 100%;
+					justify-content: space-around;
+				}
+			}
+		}
+
+		&__inner {
+			margin-bottom: 30px;
+		}
+
+		&__item {
+			margin: 0;
+			max-width: 100%;
+			width: 100%;
+
+			&:not(:first-child) {
+				margin-top: 30px;
+			}
+		}
 	}
 }
 
@@ -1464,6 +1586,32 @@
 			}
 		}
 	}
+
+	.favourites {
+		.filter {
+			&__form {
+				flex-direction: column;
+			}
+
+			&__title {
+				width: 100%;
+			}
+
+			&__btn {
+				margin-top: 20px;
+			}
+
+			&__menu {
+				left: 0;
+				right: auto;
+			}
+
+			&__quantity {
+				margin-left: 0;
+				margin-top: 15px;
+			}
+		}
+	}
 }
 
 @media (max-width: 380px) {
@@ -1688,7 +1836,7 @@
 	}
 
 	.join {
-		padding: 40px 0;
+		padding: 40px 10px;
 
 		&__title {
 			font-size: 32px;
@@ -1856,6 +2004,12 @@
 				padding: 20px;
 				flex-direction: column;
 			}
+		}
+	}
+
+	.favourites {
+		&__info {
+			padding: 0 10px;
 		}
 	}
 }
