@@ -185,4 +185,40 @@ $(function(){
 		return false;
 	});
 
+	$('.starter-templates').on('click', function () {
+		$('.text-starter-templates').slideToggle();
+	});
+
+	$('.starter-domain').on('click', function () {
+		$('.text-starter-domain').slideToggle();
+	});
+
+	$('.starter-demos').on('click', function () {
+		$('.text-starter-demos').slideToggle();
+	});
+
+	$('.business-templates').on('click', function () {
+		$('.text-business-templates').slideToggle();
+	});
+
+	$('.business-domain').on('click', function () {
+		$('.text-business-domain').slideToggle();
+	});
+
+	$('.business-demos').on('click', function () {
+		$('.text-business-demos').slideToggle();
+	});
+
+	$('.agency-templates').on('click', function () {
+		$('.text-agency-templates').slideToggle();
+	});
+
+	$('.agency-domain').on('click', function () {
+		$('.text-agency-domain').slideToggle();
+	});
+
+	$('.agency-demos').on('click', function () {
+		$('.text-agency-demos').slideToggle();
+	});
+
 });
